@@ -19,34 +19,14 @@ function App() {
             >
               {movies.map((movie, index) => {
                 return (
-                  <Draggable
-                    draggableId={movie.id.toString()}
+                  <Movie
+                    id={movie.id}
                     index={index}
                     key={movie.id}
-                  >
-                    {(provided) => (
-                      // <Movie
-                      //   key={movie.id}
-                      //   title={movie.title}
-                      //   year={movie.year}
-                      //   director={movie.director}
-                      //   {...provided.draggableProps}
-                      //   {...provided.dragHandleProps}
-                      //   ref={provided.innerRef}
-                      // />
-                      <li
-                        className="movie"
-                        key={movie.id}
-                        {...provided.draggableProps}
-                        {...provided.dragHandleProps}
-                        ref={provided.innerRef}
-                      >
-                        <h4>Title: {movie.title}</h4>
-                        <p>Year: {movie.year}</p>
-                        <p>Director: {movie.director}</p>
-                      </li>
-                    )}
-                  </Draggable>
+                    title={movie.title}
+                    year={movie.year}
+                    director={movie.director}
+                  />
                 );
               })}
               {provided.placeholder}
