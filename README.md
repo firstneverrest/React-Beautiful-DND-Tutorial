@@ -114,3 +114,16 @@ const Movie = ({ id, index, title, year, director }) => {
 
 export default Movie;
 ```
+
+## Snapshot
+
+snapshot is a prop like provided prop which can be used to get isDragging or isDraggingOver value.
+You can use snapshot to change styles when dragging like changing background color.
+
+## Horizontal lists
+
+Changing drag & drop direction with direction property in `<Droppable>`.
+
+```js
+ <Droppable droppableId="movies" direction="horizontal">...<Droppable>
+```
