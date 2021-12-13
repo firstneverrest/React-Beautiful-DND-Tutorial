@@ -4,9 +4,9 @@ import { Draggable } from 'react-beautiful-dnd';
 const Movie = ({ id, index, title, year, director }) => {
   return (
     <Draggable draggableId={id.toString()} index={index} key={id}>
-      {(provided) => (
+      {(provided, snapshot) => (
         <li
-          className="movie"
+          className={`movie ${snapshot.isDragging ? 'dragging' : ''}`}
           key={id}
           {...provided.draggableProps}
           {...provided.dragHandleProps}

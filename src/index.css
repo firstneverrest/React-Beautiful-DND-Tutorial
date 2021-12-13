@@ -13,7 +13,11 @@ body {
 .App {
   display: grid;
   place-items: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+
+.App h2 {
+  margin-bottom: 16px;
 }
 
 li {
@@ -21,19 +25,29 @@ li {
 }
 
 .movie-list {
-  margin-top: 20px;
-  height: 70vh;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .movie {
   padding: 24px 28px;
   border-radius: 8px;
+  background-color: #fff;
   border: solid 2px #d0d0d0;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .movie:not(:last-child) {
   margin-bottom: 14px;
+}
+
+.dragging {
+  background: #f7f6f2;
+}
+
+.dragging-over {
+  background: #c8c6c6;
 }
 
 .copyright {

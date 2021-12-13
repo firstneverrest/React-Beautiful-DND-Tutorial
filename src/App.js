@@ -20,9 +20,11 @@ function App() {
       <h2>Movies List</h2>
       <DragDropContext onDragEnd={handleOnDragEnd}>
         <Droppable droppableId="movies">
-          {(provided) => (
+          {(provided, snapshot) => (
             <ul
-              className="movie-list"
+              className={`movie-list ${
+                snapshot.isDraggingOver ? 'dragging-over' : ''
+              }`}
               {...provided.droppableProps}
               ref={provided.innerRef}
             >
