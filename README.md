@@ -14,7 +14,7 @@ npm install react-beautiful-dnd --save
 
 ## Concept
 
-![image](images/../react-dnd.jpg)
+![image](./images/react-dnd.jpg)
 
 image from: https://github.com/atlassian/react-beautiful-dnd
 
@@ -127,3 +127,5 @@ Changing drag & drop direction with direction property in `<Droppable>`.
 ```js
  <Droppable droppableId="movies" direction="horizontal">...<Droppable>
 ```
+
+## Simple Drag & Drop between two lists
