@@ -21,17 +21,22 @@ li {
 }
 
 .movie-list {
-  border: 2px solid #ddd;
   margin-top: 20px;
-  border-radius: 8px;
+  height: 70vh;
 }
 
 .movie {
   padding: 24px 28px;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: solid 2px #d0d0d0;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .movie:not(:last-child) {
   margin-bottom: 14px;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 2rem;
 }
